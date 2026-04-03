@@ -1,7 +1,5 @@
 # projects
 
-各参赛队在本目录下维护**本队独立子目录**（勿改动他队目录）。
+赛会官方说明中，各队可在 `projects/` 下预留子目录。
 
-| 目录 | 队伍项目 |
-|------|----------|
-| `永恒花园EternalGarden/` | **永恒花园** — Web3 临终关怀与数字遗产（Next.js 主应用在 `src/ui`） |
+**永恒花园** 项目已放在仓库根目录 **[`永恒花园EternalGarden/`](../永恒花园EternalGarden/README.md)**（结构：`README.md`、`docs/`、`src/`）。

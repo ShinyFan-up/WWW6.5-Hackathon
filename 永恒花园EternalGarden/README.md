@@ -6,12 +6,12 @@
 
 ---
 
-## 仓库目录（赛会 `projects` 模板）
+## 仓库目录
 
-本队代码位于 **`projects/永恒花园EternalGarden/`**，结构如下：
+本队代码位于仓库根目录 **`永恒花园EternalGarden/`**，结构如下：
 
 ```text
-projects/永恒花园EternalGarden/
+永恒花园EternalGarden/
 ├── README.md                 # 本文件（项目总览）
 ├── docs/                     # 文档；视频和 PPT 等大文件勿直传，放链接即可
 │   ├── README.md
@@ -73,7 +73,7 @@ projects/永恒花园EternalGarden/
 ## 本地开发
 
 ```bash
-cd projects/永恒花园EternalGarden/src/ui
+cd 永恒花园EternalGarden/src/ui
 npm install
 npm run dev
 ```
@@ -91,7 +91,7 @@ npm start
 
 ## 部署（Vercel）
 
-仓库为 monorepo 时，在 Vercel 中将 **Root Directory** 设为 **`projects/永恒花园EternalGarden/src/ui`**。详见 [docs/VERCEL_DEPLOY.md](./docs/VERCEL_DEPLOY.md)。
+在 Vercel 中将 **Root Directory** 设为 **`永恒花园EternalGarden/src/ui`**（本仓库若与其他项目同库，仍须指定该子目录）。详见 [docs/VERCEL_DEPLOY.md](./docs/VERCEL_DEPLOY.md)。
 
 ---
 
