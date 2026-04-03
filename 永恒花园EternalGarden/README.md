@@ -8,20 +8,19 @@
 
 ## 仓库目录
 
-本队代码位于仓库根目录 **`永恒花园EternalGarden/`**，结构如下：
+本队代码位于仓库根目录 **`永恒花园EternalGarden/`**。**`contracts`、`backend`、`ui` 三个目录并列在 `src/` 下**（不要和 `docs` 同级），结构如下：
 
 ```text
 永恒花园EternalGarden/
-├── README.md                 # 本文件（项目总览）
-├── docs/                     # 文档；视频和 PPT 等大文件勿直传，放链接即可
-│   ├── README.md
-│   ├── README.en.md
-│   └── VERCEL_DEPLOY.md
+├── README.md
+├── docs/
 └── src/
     ├── contracts/            # 合约相关代码
     ├── backend/              # 后端相关代码
     └── ui/                   # 前端相关代码（Next.js 主应用）
 ```
+
+`docs/` 内含 `README.en.md`、`VERCEL_DEPLOY.md` 等；视频、PPT 等大文件勿直传仓库，请放外链。
 
 ---
 

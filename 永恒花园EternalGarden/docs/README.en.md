@@ -88,6 +88,16 @@ The full narrative is in the Chinese business plan document: *「永恒花园」
 
 ## Repository Layout
 
+```text
+永恒花园EternalGarden/
+├── README.md
+├── docs/
+└── src/
+    ├── contracts/
+    ├── backend/
+    └── ui/
+```
+
 | Path | Role |
 |------|------|
 | `src/ui/app/` | Next.js routes and UI |
