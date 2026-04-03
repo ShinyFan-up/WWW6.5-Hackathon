@@ -1,4 +1,6 @@
-"use client";
+import type { Metadata } from "next";
+import { AuthContent } from "./_components/AuthContent";
+
 
 import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
@@ -192,12 +194,14 @@ export default function AuthPage() {
   }
 
   return (
-    <div className="mx-auto w-full max-w-lg px-4 py-12 space-y-6">
-      <div>
-        <h1 className="text-2xl font-semibold tracking-tight">实习身份验证</h1>
-        <p className="mt-1 text-sm text-muted-foreground">
-          上传你的 Offer Letter，系统识别后为你签发链上 SBT 凭证，解锁评价权限。
-        </p>
+    <div className="mx-auto w-full max-w-lg px-4 py-16">
+      <h1 className="text-2xl font-semibold tracking-tight">身份验证</h1>
+      <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+        连接你的钱包以验证身份。支持 SIWE、OAuth 或 SBT 校验。
+      </p>
+      <div className="mt-8">
+        <AuthContent />
+
       </div>
 
       {/* Step 1: Upload */}
