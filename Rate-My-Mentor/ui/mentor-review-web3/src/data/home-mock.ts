@@ -19,6 +19,7 @@ export type MockCompanyRank = {
   mentorLinked: number;
   score: number;
   region: string;
+  icon?: string; // 企业图标URL
 };
 
 export const MOCK_TOP_MENTORS: MockMentorRank[] = [
@@ -133,6 +134,7 @@ export const MOCK_TOP_COMPANIES: MockCompanyRank[] = [
     mentorLinked: 42,
     score: 96.4,
     region: "新加坡",
+    icon: "https://api.dicebear.com/7.x/shapes/svg?seed=NovaChain&backgroundColor=165DFF",
   },
   {
     rank: 2,
@@ -142,6 +144,7 @@ export const MOCK_TOP_COMPANIES: MockCompanyRank[] = [
     mentorLinked: 38,
     score: 94.8,
     region: "远程",
+    icon: "https://api.dicebear.com/7.x/shapes/svg?seed=Aurora&backgroundColor=8B5CF6",
   },
   {
     rank: 3,
@@ -151,6 +154,7 @@ export const MOCK_TOP_COMPANIES: MockCompanyRank[] = [
     mentorLinked: 31,
     score: 93.1,
     region: "香港",
+    icon: "https://api.dicebear.com/7.x/shapes/svg?seed=LedgerForge&backgroundColor=10B981",
   },
   {
     rank: 4,
@@ -160,6 +164,7 @@ export const MOCK_TOP_COMPANIES: MockCompanyRank[] = [
     mentorLinked: 27,
     score: 91.5,
     region: "北美",
+    icon: "https://api.dicebear.com/7.x/shapes/svg?seed=Citadel&backgroundColor=F59E0B",
   },
   {
     rank: 5,
@@ -169,6 +174,7 @@ export const MOCK_TOP_COMPANIES: MockCompanyRank[] = [
     mentorLinked: 24,
     score: 90.2,
     region: "欧盟",
+    icon: "https://api.dicebear.com/7.x/shapes/svg?seed=Zenith&backgroundColor=EC4899",
   },
   {
     rank: 6,
@@ -178,6 +184,7 @@ export const MOCK_TOP_COMPANIES: MockCompanyRank[] = [
     mentorLinked: 22,
     score: 88.9,
     region: "首尔",
+    icon: "https://api.dicebear.com/7.x/shapes/svg?seed=PixelRealm&backgroundColor=EF4444",
   },
   {
     rank: 7,
@@ -187,6 +194,7 @@ export const MOCK_TOP_COMPANIES: MockCompanyRank[] = [
     mentorLinked: 19,
     score: 87.4,
     region: "上海",
+    icon: "https://api.dicebear.com/7.x/shapes/svg?seed=Harbor&backgroundColor=06B6D4",
   },
   {
     rank: 8,
@@ -196,6 +204,7 @@ export const MOCK_TOP_COMPANIES: MockCompanyRank[] = [
     mentorLinked: 17,
     score: 86.0,
     region: "远程",
+    icon: "https://api.dicebear.com/7.x/shapes/svg?seed=OpenCampus&backgroundColor=84CC16",
   },
   {
     rank: 9,
@@ -205,6 +214,7 @@ export const MOCK_TOP_COMPANIES: MockCompanyRank[] = [
     mentorLinked: 15,
     score: 84.6,
     region: "柏林",
+    icon: "https://api.dicebear.com/7.x/shapes/svg?seed=GreenLedger&backgroundColor=22C55E",
   },
   {
     rank: 10,
@@ -214,5 +224,6 @@ export const MOCK_TOP_COMPANIES: MockCompanyRank[] = [
     mentorLinked: 14,
     score: 83.2,
     region: "东京",
+    icon: "https://api.dicebear.com/7.x/shapes/svg?seed=MeshIdentity&backgroundColor=6366F1",
   },
 ];

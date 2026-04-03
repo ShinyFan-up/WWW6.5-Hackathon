@@ -74,7 +74,7 @@ export default function ReviewPage() {
       setSbt(null);
     }
 
-    // 尝试读取从导师详情页传递过来的导师名字
+    // 尝试读取从企业详情页传递过来的企业名字
     try {
       const mentorName = localStorage.getItem("rmm_mentor_name");
       if (mentorName) {
@@ -306,7 +306,7 @@ export default function ReviewPage() {
               className="flex-1"
               onClick={() => router.push("/mentors")}
             >
-              查看导师列表
+              查看企业榜单
             </Button>
             <Button className="flex-1" onClick={resetForm}>
               再写一条
@@ -362,7 +362,7 @@ export default function ReviewPage() {
                   : "border-border"
               }`}
             >
-              导师
+              企业
             </button>
             <button
               type="button"
@@ -373,15 +373,15 @@ export default function ReviewPage() {
                   : "border-border"
               }`}
             >
-              公司
+              机构
             </button>
           </div>
 
           <Input
             placeholder={
               targetType === "mentor"
-                ? "输入导师姓名（如：张三）"
-                : "输入公司名称（如：字节跳动）"
+                ? "输入企业名称（如：字节跳动）"
+                : "输入机构名称（如：某投资机构）"
             }
             value={targetName}
             onChange={(e) => setTargetName(e.target.value)}
