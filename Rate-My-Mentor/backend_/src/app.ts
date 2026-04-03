@@ -37,8 +37,8 @@ app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true }));
 app.use(loggerMiddleware);
 
-// 挂载根路由
-app.use('/api', rootRouter);
+// 挂载根路由（/api/v1 与前端 NEXT_PUBLIC_API_BASE 保持一致）
+app.use('/api/v1', rootRouter);
 
 // 全局错误处理
 app.use(errorMiddleware);
