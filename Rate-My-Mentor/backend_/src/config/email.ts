@@ -3,7 +3,7 @@ import { getEmailEnv } from './env';
 
 let _emailTransporter: nodemailer.Transporter | null = null;
 
-// 懒加载：只有真正调用邮件功能时才校验配置并初始化
+// 懒加载：获取邮箱发送客户端（不在模块加载时初始化）
 export function getEmailTransporter(): nodemailer.Transporter {
   if (_emailTransporter) return _emailTransporter;
 
@@ -21,9 +21,6 @@ export function getEmailTransporter(): nodemailer.Transporter {
 
   return _emailTransporter;
 }
-
-// 兼容旧代码导入，修复报错：has no exported member 'emailTransporter'
-export const emailTransporter = getEmailTransporter();
 
 //import nodemailer from 'nodemailer';
 //import { env } from './env';

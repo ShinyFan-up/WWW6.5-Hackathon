@@ -1,4 +1,4 @@
-import { emailTransporter } from '../config/email';
+import { getEmailTransporter } from '../config/email';
 import { env, getAIEnv } from '../config/env';
 import { miniMaxChatCompletion } from '../config/minimax';
 import { OfferOCRResult } from '../types/auth.types';
@@ -19,7 +19,7 @@ export class AuthService {
     otpStore.set(email.toLowerCase(), { code: otpCode, expireAt });
 
     // 发送邮件
-    await emailTransporter.sendMail({
+    await getEmailTransporter().sendMail({
       from: `"Rate My Mentor" <${env.EMAIL_USER}>`,
       to: email,
       subject: '你的Rate My Mentor邮箱验证验证码',

@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -X POST http://localhost:3003/api/v1/ai/extract-review -H \"Content-Type: application/json\" -d \"{\\\\\"rawContent\\\\\": \\\\\"这位导师非常专业，讲解深入浅出，沟通能力很强\\\\\"}\")",
+      "Bash(curl -X POST https://api.minimax.io/v1/text/chatcompletion_v2 -H 'Authorization: Bearer sk-cp-ME6n_tK0Ux4kaYKOCij21zjhYoMrhocw4FUmmDjE7l3Y3sUQnRSpXSZd2vBkMivaDbgFV7CqoOiNH9OP60I8OekraYiPWKuvFy72YGzWA2Nc5U0unOa8SlU' -H 'Content-Type: application/json' -d '{\"model\": \"MiniMax-M2.7\", \"messages\": [{\"role\": \"user\", \"content\": \"你好\"}]}')",
+      "Bash(taskkill //F //PID 5952)",
+      "Bash(findstr \"3003\")"
+    ]
+  }
+}

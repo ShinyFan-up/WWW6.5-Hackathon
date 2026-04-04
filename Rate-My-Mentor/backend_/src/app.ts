@@ -9,8 +9,8 @@ import { loggerMiddleware } from './middlewares/logger.middleware';
 
 const app = express();
 
-// 🔥 固定端口 3000
-const PORT = 3000;
+// 🔥 固定端口 3003
+const PORT = 3003;
 
 // ✅ 根路由 / （解决 404 关键！）
 app.get('/', (req, res) => {
