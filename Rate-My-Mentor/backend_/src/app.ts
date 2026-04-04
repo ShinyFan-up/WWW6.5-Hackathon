@@ -10,7 +10,7 @@ import { loggerMiddleware } from './middlewares/logger.middleware';
 const app = express();
 
 // 修改为兼容端口
-const PORT = process.env.PORT || 3001;
+const PORT = Number(process.env.PORT) || 3003;
 
 // ✅ 根路由 / （解决 404 关键！）
 app.get('/', (req, res) => {
