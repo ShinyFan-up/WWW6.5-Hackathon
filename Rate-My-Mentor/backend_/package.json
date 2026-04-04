@@ -5,8 +5,8 @@
   "main": "dist/app.js",
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only src/app.ts",
-    "build": "tsc",
-    "start": "node dist/app.js" 
+    "build": "tsc --skipLibCheck",
+    "start": "node dist/app.js"
   },
   "dependencies": {
     "@pinata/sdk": "^2.1.0",
