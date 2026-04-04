@@ -32,7 +32,15 @@ app.get('/health', (req, res) => {
 });
 
 // 全局中间件
-app.use(cors());
+// CORS 配置 - 通过环境变量控制
+const allowedOrigins = process.env.ALLOWED_ORIGINS?.split(',') || ['*'];
+
+app.use(cors({
+  origin: allowedOrigins,
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+}));
 app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true }));
 app.use(loggerMiddleware);
