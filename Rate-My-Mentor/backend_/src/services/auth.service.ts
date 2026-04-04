@@ -55,6 +55,7 @@ export class AuthService {
 
   // 3. OCR识别Offer Letter，提取公司信息（走 MiniMax 原生多模态；OpenAI 兼容层不支持图片）
   static async extractOfferInfo(base64Image: string): Promise<OfferOCRResult> {
+
     const { MINIMAX_VISION_MODEL } = getAIEnv();
     const textPrompt = `
                 你是一个专业的Offer Letter识别专家，请识别这张Offer Letter图片，完成以下任务：
